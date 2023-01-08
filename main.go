@@ -6,16 +6,15 @@ import (
 )
 
 const (
-	ECHO_V4 = "echo_v4"
-	ECHO    = "echo"
-	GOJI    = "goji"
-	GIN     = "gin"
-	BEEGO   = "beego"
-	GOCHI   = "gochi"
+	ECHO  = "echo"
+	GOJI  = "goji"
+	GIN   = "gin"
+	BEEGO = "beego"
+	GOCHI = "gochi"
 )
 
 var frameworks = map[string]string{
-	"github.com/labstack/echo/v4": ECHO_V4,
+	"github.com/labstack/echo/v4": ECHO,
 	"github.com/labstack/echo":    ECHO,
 	"goji.io":                     GOJI,
 	"github.com/gin-gonic/gin":    GIN,
@@ -35,9 +34,8 @@ func main() {
 
 	framework := getFramework(require)
 	switch framework {
-	case ECHO_V4:
-		echoV4()
 	case ECHO:
+		echo()
 	case GOJI:
 	case BEEGO:
 	case GOCHI:
