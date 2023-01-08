@@ -34,7 +34,14 @@ func main() {
 	}
 
 	framework := getFramework(require)
-	if framework != "" {
-		fmt.Println(framework)
+	switch framework {
+	case ECHO_V4:
+		echoV4()
+	case ECHO:
+	case GOJI:
+	case BEEGO:
+	case GOCHI:
+	default:
+		fmt.Printf("framework not supported: %s\n", framework)
 	}
 }
