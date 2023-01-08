@@ -37,6 +37,7 @@ func main() {
 	case ECHO:
 		echo()
 	case GOJI:
+		goji()
 	case BEEGO:
 	case GOCHI:
 	default:
