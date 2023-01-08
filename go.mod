@@ -1,4 +1,4 @@
-module github.com/stefafafan/pprof-mounter
+module github.com/stefafafan/pprof-helper
 
 go 1.19
 
