@@ -26,3 +26,8 @@ func main() {
 	mux.HandleFunc(pat.Get("/debug/pprof/symbol"), pprof.Symbol)
 }
 ```
+
+You can also specify `--go-mod-file` option, which is the path of the `go.mod` instead of moving to that directory.
+```sh
+$ pprof-helper --go-mod-file=./my-go-project/go.mod
+```
