@@ -11,11 +11,19 @@ import (
 const (
 	ECHO_V4 = "echo_v4"
 	ECHO    = "echo"
+	GOJI    = "goji"
+	GIN     = "gin"
+	BEEGO   = "beego"
+	GOCHI   = "gochi"
 )
 
 var frameworks = map[string]string{
 	"github.com/labstack/echo/v4": ECHO_V4,
 	"github.com/labstack/echo":    ECHO,
+	"goji.io":                     GOJI,
+	"github.com/gin-gonic/gin":    GIN,
+	"github.com/beego/beego/v2":   BEEGO,
+	"github.com/go-chi/chi/v5":    GOCHI,
 }
 
 func main() {
