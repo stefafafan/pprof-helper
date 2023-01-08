@@ -7,7 +7,7 @@ go install github.com/stefafafan/pprof-helper
 ```
 
 ## Usage
-Go to the directory with `go.mod` and call the helper. The helper will go through your `go.mod` and for now print out pseudocode for 
+Go to the directory with `go.mod` and call the helper. The helper will go through your `go.mod` and for now just print out pseudocode that matches the used web framework.
 
 ```sh
 $ cd your-go-project
